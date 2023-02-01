@@ -1,0 +1,49 @@
+auto-save: 5
+
+generate-examples: true
+
+#shop opened when just /dailyshop is executed
+default-shop: daily_shop
+
+out-of-stock-item: no_stock_item
+
+purchase-menu: true
+
+default-meta: generic_display_2
+
+messages:
+  INVALID_SHOP: 'That shop doesn''t exist'
+  OPEN_MENU: '&aOpening %shop_name%...'
+  CLOSE_MENU: '&cClosing %shop_name%...'
+  SHOP_REFRESHING: 'Closing shop because it''s refreshing'
+  PURCHASE: '&aYou''ve purchased x%entry_amount% %entry_name% for %entry_cost_all%$'
+  NO_STOCK: '&cThere are x%entry_stock_player% %entry_name% left'
+  NO_MONEY: '&cYou need %entry_cost_all%$ to buy this'
+  NO_SPACE: '&cNot enough space in inventory'
+
+#Commands:
+# /dailyshop reload (admin)
+# /dailyshop additem <name> <file> (admin)
+# /dailyshop <shop> (user)
+# /dailyshop open <player> <shop> (console only)
+
+#Permissions:
+# dailyshop.user
+# dailyshop.admin
+
+#Placeholders:
+# %shop_name%           - shop name (file name)
+# %shop_page%           - current page
+
+# VVV Only for entry display items or inside "purchase_menu.yml"
+# %entry_name%          - name of the entry
+# %entry_stock%         - starting stock
+# %entry_stock_player%  - stock left for the player
+# %entry_purchased%     - amount already purchased
+# %entry_cost%          - cost for 1 entry
+
+# VVV Only inside "purchase_menu.yml"
+# %entry_cost_all%      - total cost
+# %entry_amount%        - amount to be/been purchased
+
+

@@ -1,0 +1,10 @@
+main: com.fulvio.dailyshop.DailyShopPlugin
+name: DailyShop
+version: 2.0
+api-version: 1.14
+author: Fulvio
+depend: [ Vault ]
+softdepend: [ PlaceholderAPI ]
+commands:
+  dailyshop:
+    aliases: [ dshop ]

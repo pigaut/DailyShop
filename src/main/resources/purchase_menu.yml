@@ -1,0 +1,29 @@
+name: 'Purchase %entry_name%'
+
+items:
+  P: gray_glass
+  C: close_item
+  B: back_arrow
+  S: stock_item
+  Z: purchase_item
+
+menu:
+  - "P P P P S P P P P"
+  - "P Z Z Z Z Z Z Z P"
+  - "B P P P C P P P P"
+
+buttons:
+  C: CLOSE
+  B: BACK
+  Z: BUY #If no purchase option is set for the slot the default is 1
+
+purchase-options:
+  10: 1
+  11: 2
+  12: 4
+  13: 8
+  14: 16
+  15: 32
+  16: 64
+  #slot:amount
+

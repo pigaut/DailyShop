@@ -1,0 +1,21 @@
+cobblestone_display:
+  type: cobblestone
+  name: 'Buy Cobblestone!'
+
+diamond_sword:
+  name: 'The Sword'
+  type: diamond sword
+
+porkchop:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3120
+  type: PORKCHOP
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Enchanted
+      Porkchop"}],"text":""}'
+    enchants:
+      PROTECTION_FIRE: 1
+    ItemFlags:
+      - HIDE_ENCHANTS

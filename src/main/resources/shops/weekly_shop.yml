@@ -1,0 +1,40 @@
+name: 'Weekly Shop'
+
+refresh: 30
+
+entry-amount: 1-33
+
+entries:
+  'Diamond':
+    display: diamond
+    stock: 1-7
+    cost: 100
+    chance: 20
+    limit: 3
+    item: diamond
+  'Command':
+    display: peasant
+    amount: 1
+    limit: 1
+    commands: [ 'give %player% cobblestone %amount%' ]
+
+items:
+  P: gray_glass
+  S: shop_item
+  C: close_item
+  B: back_arrow
+  N: next_arrow
+
+buttons:
+  S: BUY
+  C: CLOSE
+  N: NEXT
+  B: BACK
+
+# '0' for null
+menu:
+  - "P P P P P P P P P"
+  - "P S S S S S S S P"
+  - "P S S S S S S S P"
+  - "P S S S S S S S P"
+  - "B P P P C P P P N"

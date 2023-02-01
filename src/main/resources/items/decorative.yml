@@ -1,0 +1,39 @@
+generic_display:
+  name: '%entry_name%'
+  lore:
+    - 'cost: %entry_cost%'
+
+generic_display_2:
+  name: 'Click to Purchase'
+  lore:
+    - "item: %entry_name%"
+    - 'amount: %entry_amount%'
+    - 'cost: %entry_cost_all%'
+
+gray_glass:
+  type: gray stained glass pane
+  amount: 1
+  name: ''
+  lore: [ ]
+  enchanted: false
+  model-data: -1
+
+close_item:
+  type: barrier
+  name: '&c&lCLOSE'
+
+no_stock_item:
+  type: 'RED_WOOL'
+  name: '&cOut Of Stock'
+
+next_arrow:
+  type: arrow
+  name: '&7&lNEXT'
+
+back_arrow:
+  type: arrow
+  name: '&7&lBACK'
+
+stock_item:
+  type: chest
+  name: 'Stock left: %entry_stock_player%/%entry_stock%'
